@@ -37,11 +37,10 @@ train_image = ee.ImageCollection('COPERNICUS/S2_SR') \
 pointMap = geemap.Map(center=[32.150, 34.816], zoom=13.4, add_google_map=True)
 pointMap.addLayer(train_image, {'min': 0.0,'max': 10000.0,'bands': ['B4','B3','B2']}, name='Sentinel 2 True colors', opacity=0.95)            
 pointMap.add_styled_vector(sample_points, column="ClassValue", palette = ['000000', 'F4F4F4'], layer_name="Sample points")
-pointMap.add_legend(legend_title='Legend', layer_name=sample_points, legend_keys=['None building sample', 'Building sample'],legend_colors=['000000','F4F4F4'])
 
 with dataContainer:
     st.subheader('Data ')
-    st.text('- Buildings location:  ')
+    st.text('- Buildings location:')
     st.markdown('https://www.openstreetmap.org')
     st.text('- Imagery: ')
     st.markdown('https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR')
