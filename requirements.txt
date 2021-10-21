@@ -1,5 +1,4 @@
-geemap
+streamlit-folium
+git+git://github.com/giswqs/geemap
 pandas
-geopandas
-streamlit
 plotly.express
