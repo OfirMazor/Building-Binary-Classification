@@ -5,13 +5,12 @@ import pandas as pd
 import streamlit as st
 from plotly.express import line, bar
 
-
+st.set_page_config(layout = 'wide')
 headContainer = st.container()
 dataContainer = st.container()
 paramsContainer = st.container()
 resultsContainer = st.container()
 visContainer = st.container()
-st.set_page_config(layout = 'wide')
 
 
 
