@@ -11,6 +11,7 @@ dataContainer = st.container()
 paramsContainer = st.container()
 resultsContainer = st.container()
 visContainer = st.container()
+st.set_page_config(layout = 'wide')
 
 
 
