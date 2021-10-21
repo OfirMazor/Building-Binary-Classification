@@ -1,3 +1,5 @@
 geemap
 pandas
 geopandas
+streamlit
+plotly.express
