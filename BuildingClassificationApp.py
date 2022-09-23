@@ -1,6 +1,6 @@
 import ee
 import geemap
-geemap.ee_initialize()
+ee.Initialize()
 import pandas as pd
 import streamlit as st
 from plotly.express import line, bar
